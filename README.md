@@ -75,7 +75,6 @@ To get a local copy up and running follow these simple steps.
 
 ![Home Page](screenshots/home.png)
 ![Weather Page](screenshots/weather.png)
-![Contact Page](screenshots/contact.png)
 
 ## Technologies Used
 
