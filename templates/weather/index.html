@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Weather{% endblock %}
+
+{% block content %}
+<div class="weather-container text-center">
+    <h1 class="display-4">Weather in {{ city }}</h1>
+    <p class="lead">Temperature: <strong>{{ temperature }}°C</strong></p>
+    <p>Description: <strong>{{ description }}</strong></p>
+    <img src="http://openweathermap.org/img/w/{{ icon }}.png" alt="Weather Icon" class="weather-icon mb-4">
+
+    <form method="get" action="" class="form-inline justify-content-center">
+        <div class="form-group mx-sm-3 mb-2">
+            <input type="text" name="city" class="form-control" placeholder="Enter city">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Get Weather</button>
+    </form>
+</div>
+{% endblock %}
